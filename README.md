@@ -7,7 +7,7 @@
 
 ### ⚙️ **Workflow**
 
-| [User Uploads Dataset + Task]
+[User Uploads Dataset + Task]
              ↓
     [Preprocessing Engine]
              ↓
@@ -17,9 +17,7 @@
              ↓
      [Evaluation + Output]
              ↓
-
-| [Download Model / Report] |
-| ------------------------- |
+   [Download Model / Report]
 
 ### 🧰 **Suggested Tech Stack**
 
