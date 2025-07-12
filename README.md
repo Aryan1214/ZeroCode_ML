@@ -19,18 +19,7 @@
 | Visualizations  | `matplotlib`,`seaborn`,`plotly`               |
 
 ### 📁 Folder Structure (Simple Version)
-
-auto_ml_pipeline/
-│
-├── app.py                       # Main script or Streamlit app
-├── preprocess.py           # Data cleaning functions
-├── model_selector.py    # Logic for choosing/training models
-├── evaluator.py              # Metrics and reporting
-├── utils.py                      # Helper functions
-├── uploads/                   # Uploaded datasets
-├── models/                    # Saved models
-├── reports/                    # Output reports
-
+<img width="646" height="329" alt="Screenshot 2025-07-12 203254" src="https://github.com/user-attachments/assets/3fbee2ad-a467-4483-b29e-50761ed1e9e1" />
 
 ### 💡**Example Usage Scenarios**
 
