@@ -6,18 +6,7 @@
 > Build a system that accepts a dataset and task (like classification, regression, or clustering), then **automatically processes, trains, evaluates, and returns results** with minimal or no user intervention.
 
 ### ⚙️ **Workflow**
-
-[User Uploads Dataset + Task]
-             ↓
-    [Preprocessing Engine]
-             ↓
-     [Auto Task Verifier]
-             ↓
- [Model Selector + Trainer]
-             ↓
-     [Evaluation + Output]
-             ↓
-   [Download Model / Report]
+<img width="341" height="356" alt="Screenshot 2025-07-12 203245" src="https://github.com/user-attachments/assets/ac4e3410-f153-4e16-a42e-1be31ba2d1f8" />
 
 ### 🧰 **Suggested Tech Stack**
 
