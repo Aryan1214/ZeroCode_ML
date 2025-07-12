@@ -7,9 +7,8 @@
 
 ### ⚙️ **Workflow**
 
-[User Uploads Dataset + Task]
-
-    ↓
+| [User Uploads Dataset + Task]
+             ↓
     [Preprocessing Engine]
              ↓
      [Auto Task Verifier]
@@ -18,7 +17,9 @@
              ↓
      [Evaluation + Output]
              ↓
-   [Download Model / Report]
+
+| [Download Model / Report] |
+| ------------------------- |
 
 ### 🧰 **Suggested Tech Stack**
 
