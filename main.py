@@ -25,10 +25,10 @@ def preprocess_data(df, target_column):
 
 def train_model(X_train, y_train, task):
     if task=="classification":
-        model=TPOTClassifier(generations=5, population_size=20, verbosity=2, random_state=42)
+        model=TPOTClassifier(generations=5, population_size=20, random_state=42)
         
     else:
-        model=TPOTRegressor(generations=5, population_size=20, verbosity=2, random_state=42)
+        model=TPOTRegressor(generations=5, population_size=20, random_state=42)
         
     model.fit(X_train, y_train)
     return model
@@ -56,3 +56,12 @@ if __name__ == "__main__":
     file_path = input("📂 Enter the path of csv dataset: ")
     task = input("🗒️ Enter the task (classification or regression):").strip().lower()
     target_column = input("Enter the target column name: ").strip()
+    
+    #Pipeline steps
+    df= load_file(file_path)
+    X, y = preprocess_data(df, target_column)
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+    
+    model= train_model(X_train, y_train, task)
+    evaluate_model(model, X_test, y_test, task)
+    save_model(model)
