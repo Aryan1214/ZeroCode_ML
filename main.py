@@ -32,7 +32,6 @@ def train_model(X_train, y_train, task):
         
     model.fit(X_train, y_train)
     return model
-
 def evaluate_model(model, X_test, y_test, task):
     predictions=model.predict(X_test)
     print("\n📊 Evaluation Results:")
