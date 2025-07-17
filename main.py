@@ -1,10 +1,5 @@
 import pandas as pd
-import numpy as np
 from sklearn.model_selection import train_test_split
-from sklearn.metrics import accuracy_score, mean_squared_error, r2_score
-from tpot import TPOTClassifier, TPOTRegressor
-#TPOT (Tree-based Pipeline Optimization Tool) is an open-source Python library for Automated Machine Learning (AutoML).
-# It leverages genetic programming to optimize machine learning pipelines
 import joblib #running Python functions as pipeline jobs
 import os
 from modules.preprocessor import preprocess_data

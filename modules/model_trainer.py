@@ -1,4 +1,6 @@
 from tpot import TPOTClassifier, TPOTRegressor
+#TPOT (Tree-based Pipeline Optimization Tool) is an open-source Python library for Automated Machine Learning (AutoML).
+# It leverages genetic programming to optimize machine learning pipelines
 
 def train_model(X_train, y_train, task):
     if task=="classification":

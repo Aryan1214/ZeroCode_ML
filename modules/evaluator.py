@@ -7,8 +7,8 @@ def evaluate_model(model, X_test, y_test, task):
     if task=="classification":
         acc = accuracy_score(y_test, predictions)
         print(f"Accuracy: {acc:.4f}")
-        # print("Confussion Matrix:")
-        # print(confusion_matrix(y_test, predictions))
+        print("Confussion Matrix:")
+        print(confusion_matrix(y_test, predictions))
     else:
         mse = mean_squared_error(y_test, predictions)
         r2 = r2_score(y_test, predictions)
