@@ -21,7 +21,7 @@ if __name__ == "__main__":
     #user input
     file_path = input("📂 Enter the path of csv dataset: ")
     task = input("🗒️ Enter the task (classification or regression):").strip().lower()
-    target_column = input("Enter the target column name: ").strip()
+    target_column = input("🎯Enter the target column name: ").strip()
     
     #Pipeline steps
     df= load_file(file_path)
