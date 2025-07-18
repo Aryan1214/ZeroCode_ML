@@ -31,3 +31,12 @@ if __name__ == "__main__":
     model= train_model(X_train, y_train, task)
     evaluate_model(model, X_test, y_test, task)
     save_model(model)
+    
+    try:
+        input_values = [float(x) for x in input("\n🔢 Enter 13 comma-separated values for prediction: ").split(",")]
+        if len(input_values) != len(X.columns):
+            print(f"❌ Expected {len(X.columns)} values, but got {len(input_values)}.")
+        else:
+            make_prediction(model.fitted_pipeline_, input_values)
+    except Exception as e:
+        print(f"⚠️ Skipping prediction due to input error: {e}")
