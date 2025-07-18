@@ -19,7 +19,7 @@ def save_model(model):
     
 if __name__ == "__main__":
     #user input
-    file_path = input("📂 Enter the path of csv dataset: ")
+    file_path = input("📂 Enter the path of csv dataset: ").strip()
     task = input("🗒️ Enter the task (classification or regression):").strip().lower()
     target_column = input("🎯Enter the target column name: ").strip()
     
