@@ -26,7 +26,7 @@ def save_model(model): # Function to save the trained model and column names
     joblib.dump(X.columns.tolist(), "models/columns.pkl")
     print("\n💾 Modelsaved to 'models/' successfully.")
     
-if __name__ == "__main__":
+if __name__ == "__main__": # Main function to run the pipeline
     #user input
     file_path = input("📂 Enter the path of csv dataset: ").strip()
     task = input("🗒️ Enter the task (classification or regression):").strip().lower()
