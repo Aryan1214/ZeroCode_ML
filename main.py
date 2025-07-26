@@ -11,7 +11,7 @@ def load_file(file_path): # Function to load a CSV file
     print(f"File loaded successfully with {df.shape[0]} rows and {df.shape[1]} columns")
     return df
 
-def make_prediction(model, input_values):
+def make_prediction(model, input_values): # Function to make predictions using the trained model
     # Check if model has fitted_pipeline_
     if hasattr(model, "fitted_pipeline_"):
         prediction = model.fitted_pipeline_.predict([input_values])
@@ -20,7 +20,7 @@ def make_prediction(model, input_values):
     
     print(f"\n🏡 Predicted Value: {prediction[0]}")
 
-def save_model(model):
+def save_model(model): # Function to save the trained model and column names
     os.makedirs("models", exist_ok=True)
     joblib.dump(model.fitted_pipeline_, "models/Bostonbest_model.pkl")
     joblib.dump(X.columns.tolist(), "models/columns.pkl")
