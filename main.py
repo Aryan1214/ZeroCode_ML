@@ -6,7 +6,7 @@ from modules.preprocessor import preprocess_data
 from modules.model_trainer import train_model
 from modules.evaluator import evaluate_model
 
-def load_file(file_path):
+def load_file(file_path): # Function to load a CSV file
     df= pd.read_csv(file_path)
     print(f"File loaded successfully with {df.shape[0]} rows and {df.shape[1]} columns")
     return df
