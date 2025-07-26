@@ -11,6 +11,15 @@ def load_file(file_path):
     print(f"File loaded successfully with {df.shape[0]} rows and {df.shape[1]} columns")
     return df
 
+def make_prediction(model, input_values):
+    # Check if model has fitted_pipeline_
+    if hasattr(model, "fitted_pipeline_"):
+        prediction = model.fitted_pipeline_.predict([input_values])
+    else:
+        prediction = model.predict([input_values])
+    
+    print(f"\n🏡 Predicted Value: {prediction[0]}")
+
 def save_model(model):
     os.makedirs("models", exist_ok=True)
     joblib.dump(model.fitted_pipeline_, "models/Bostonbest_model.pkl")
